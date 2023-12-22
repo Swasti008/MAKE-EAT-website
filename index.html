@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make & Eat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="Container">
+        <div id="logo"><img src="./assets/Make & Eat LOGO.png" alt="logo"><span style="font-size: 0.8vw;font-weight: bold;position: relative;top:-3vw;">MAKE & EAT</span></div>
+        <div id="navContainer">
+            <div id="search"><a href="#back"><img src="./assets/search.png"></a></div>
+            <div id="bookmark"><img src="./assets/bookmark.png"></div>
+            <div id="user"><img src="./assets/user.png"></div>
+            <div id="contrast"><img src="./assets/night-mode.png"></div>
+        </div>
+    </nav>
+    <div id="grid">
+        <div id="back"></div>
+        <div id="text">
+           <span><strong>Welcome to</strong> MAKE & EAT</span> 
+            <h5>Make & Eat: Your Culinary Companion
+
+                Dive into the world of flavors with Make & Eat, your ultimate destination for culinary delights. Whether you're searching for a specific dish or just craving something new, our platform is designed to satiate your gastronomic desires.</h5>
+        </div>
+        <div id="button-Input-flex">
+            <a href="#scroll"><button id="random-dish">Curious? Try a Surprise Dish</button></a>
+            <input type="text" placeholder="Can you suggest some delicious recipes?" class="inputDish">
+            <a href="#if-searched"><img src="./assets/search.png" alt="search" height="20px" width="20px" id="search-button"></a>
+        </div>
+        <div id="slider">
+            <img src="./assets/Group 34.png" id="slide1">
+            <img src="./assets/Group 32.png" id="slide2">
+            <img src="./assets/Group 33.png" id="slide3">
+            <img src="./assets/Group 35 (1).png" id="slide4">
+            <img src="./assets/Rectangle 10.png" id="arrow" height="70px" width="70px">
+        </div>
+        <div id="scroll"></div>
+    </div>
+    <div id="second">
+        <div id="blurPolygon"></div>
+        <div id="border-around">
+            <div class="dishName"></div>
+        </div>
+        <section id = 'home'>
+            <div id="left">
+                <div class="circleBorder">
+                    <div class="curved-container">
+                        <div class="image-wrapper">
+                        </div>
+                    </div>
+                </div>
+                <button onclick="location.reload();" class="instruction">Want something new</button>
+            </div>
+            <div id="right">
+                <div class="random-modal">
+                    <p>Click the button to learn more about the dish.</p>
+                    <button onclick="showModal('procedureModal')" id="about-the-dish">About the Dish</button>
+                </div>
+                <div class="text">
+                    <h3>Elevate Your Culinary Experience</h3>
+                    <br><br>
+Indulge in a gastronomic journey like no other with our meticulously crafted dish, where every element harmoniously converges to create a symphony of flavors and textures. Each bite unveils a tantalizing blend of premium ingredients, expertly prepared to perfection by our talented chefs.
+
+Savor the rich, complex layers of flavors that dance on your palate, complemented by the subtle nuances and aromatic notes that linger, enticing you for another bite. From the vibrant colors and exquisite presentation to the impeccable balance of tastes and textures, our dish is a true testament to the artistry and passion that defines our culinary philosophy.
+                </div>
+            </div>
+           
+            
+            <div id="procedureModal" class="modal" >
+                <div class="modal-content">
+                    <div id="options">
+                        <button class="click" id="procedure-btn">Procedure</button>
+                        <button class="click"  id="ingredients-btn">Ingredients</button>
+                    </div>
+                
+                    <div class="dishName2"></div>
+                    <div class="circleBorder2">
+                        <div class="curved-container2">
+                            <div class="image-wrapper2">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="instruct">
+                        <div class="steps"></div>
+                    </div>
+                    <span class="close" onclick="hideModal('procedureModal')">&times;</span>
+                </div>
+            </div>
+           
+            
+        </section>
+
+
+    </div>
+    <div id="if-searched">
+        <div class="result">
+            <!-- <input type="search" placeholder="Can you suggest some delicious recipes?" class="search">
+            <img src="./assets/search.png" alt="search" height="20px" width="20px" id="search-button2"> -->
+        </div>
+   <div class="box-if-searched">
+    <!-- elements -->
+    
+   </div>
+</div>
+
+    <footer>
+        <div id="footer-container">
+            <div id="three-icons">
+                <img  id="logo-icon" src="./assets/Rectangle 7.png"/>
+                <img id="icons" src="./assets/Group 39.png"/>
+            </div>
+            <div class="email">
+                <h1>Contact Us</h1>
+                <div class="contact-us"><input type="text" placeholder="name"></div>
+                <div class="contact-us"><input type="text" placeholder="email id"></div>
+                <button id="signup">send your suggestion</button>
+            </div>
+            <div id="baseline"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
