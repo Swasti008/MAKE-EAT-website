@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&family=Playfair+Display:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Kodchasan:wght@200&family=Playfair+Display:ital,wght@1,500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Kodchasan';
@@ -23,7 +23,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 999; */
 }
 
 #navContainer {
@@ -58,16 +57,15 @@ nav {
 
 #text {
     position: absolute;
-    top: 14%;
-    left: 10%;
-    /* z-index: 1001; */
+    top: 23%;
+    left: 17%;
 }
 
 #text span {
     position: relative;
     font-family: 'Kodchasan';
     color: #FAF4EE;
-    font-size: 2vw;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 350;
     line-height: normal;
@@ -77,10 +75,11 @@ nav {
 #text h5 {
     display: inline-block;
     position: relative;
-    top: 8vw;
-    width: 373px;
+    top: 3vw;
+    right: 23vw;
+    width: 479px;
     height: 25px;
-    padding-top: 1.1vw;
+    padding-top: 0vw;
     padding-left: 22.7vw;
     color: #FFFDFC;
     font-family: 'Inter';
@@ -93,20 +92,20 @@ nav {
     position: absolute;
     top: 55%;
     left: 20%;
-    /* z-index: 1001; */
     display: flex;
-    width: 35vw;    
+    width: 40vw;
     justify-content: space-between;
 }
 
 #random-dish {
     margin-right: 1.5vw;
-    width: 11vw;
+    width: 15vw;
     height: 2.8vw;
     background-color: rgba(255, 99, 71, 0.774);
     border-radius: 5vw;
     border: none;
     color: #fbf6f6c2;
+
     &:hover {
         background-color: rgba(255, 99, 71, 0.945);
     }
@@ -124,58 +123,56 @@ nav {
 
 #search-button {
     position: absolute;
-    top: 25%;
-    left: 94%;
-    /* z-index: 1001; */
+    top: 26%;
+    left: 94.8%;
 }
 
-#slider{
+#slider {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
     top: 70%;
     left: 10%;
-    /* z-index: 1000; */
     width: 48vw;
     height: 8vw;
-    
+
 }
-#arrow{
+
+#arrow {
     align-self: center;
 }
-/* second */
+
+/* second section */
 #second {
-    /* display: flex;
-    flex-direction: column; */
     height: 85vh;
     background-repeat: no-repeat;
     box-shadow: 0 7px 0px 0 rgb(45 41 41);
     background-size: cover;
     background-position: center;
-    position: relative; 
-    /* z-index: 500;  */
+    position: relative;
 }
 
 .curved-container {
     position: relative;
     top: 2.5vw;
     left: 2.5vw;
-    width: 20vw;  
-    height: 20vw; 
+    width: 20vw;
+    height: 20vw;
     background-color: #fff;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 10px #90AA8B;
 }
-.circleBorder{
+
+.circleBorder {
     position: relative;
     top: 10vw;
     left: 5vw;
-    width: 25vw;  
-    height: 25vw; 
+    width: 25vw;
+    height: 25vw;
     border-radius: 50%;
-    border:5px solid #90AA8B;
+    border: 5px solid #90AA8B;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -183,19 +180,19 @@ nav {
 .image-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Aligns images to the right */
-    
+    justify-content: flex-end;
 }
 
-.image-wrapper .element{
+.image-wrapper .element {
     width: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
 .image-wrapper img:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
 }
-#blurPolygon{
+
+#blurPolygon {
     position: absolute;
     margin-top: 7vw;
     margin-left: 7vw;
@@ -205,13 +202,14 @@ nav {
     background-position: center;
     background-size: cover;
 }
-.dishName .element{
+
+.dishName .element {
     font-size: 2vw;
     font-family: 'Kodchasan';
     text-shadow: 2px 2px #90AA8B;
-
 }
-#second .instruction{
+
+#second .instruction {
     position: relative;
     left: 12vw;
     top: 13vw;
@@ -221,16 +219,19 @@ nav {
     border-radius: 2vw;
     border: none;
     color: #FAF4EE;
+
     &:hover {
         background-color: rgba(255, 99, 71, 0.945);
         color: #fbf6f6c2;
     }
 }
-#options{
-    display:flex;
+
+#options {
+    display: flex;
     gap: 2vw;
 }
-#second .click{
+
+#second .click {
     position: relative;
     left: 36vw;
     top: 27vw;
@@ -240,34 +241,40 @@ nav {
     border-radius: 2vw;
     border: none;
     color: #FAF4EE;
+
     &:hover {
         background-color: rgba(255, 99, 71, 0.945);
         color: #fbf6f6c2;
     }
 }
-#border-around{
+
+#border-around {
     position: relative;
     text-align: center;
-   height: 3vw;
-    right:0vw;
+    height: 3vw;
+    right: 0vw;
     top: 2vw;
-    border:3px solid #90AA8B;
+    border: 3px solid #90AA8B;
 }
 
-#procedure-btn ,#ingredients-btn{
+#procedure-btn,
+#ingredients-btn {
     position: relative;
-    top: -20vw ;
-    left: 26vw ;
+    top: -20vw;
+    left: 26vw;
 }
-#ingredients-btn{
+
+#ingredients-btn {
     position: relative;
-    top: -20vw ;
-    left: 30vw ;
+    top: -20vw;
+    left: 30vw;
+
     &:hover {
-        box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 }
-.instruct{
+
+.instruct {
     overflow-y: scroll;
     background-color: #ffffff;
     padding: 3vw;
@@ -278,19 +285,13 @@ nav {
     width: 40vw;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-#scroll{
+
+#scroll {
     position: relative;
     top: -80px;
 }
-/* .box-if-searched{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.individual{
-    background-color: #090707;
-    padding: 3vw;
-} */
+
+/* styling the scroll bar */
 ::-webkit-scrollbar {
     width: 4px;
 }
@@ -306,23 +307,26 @@ nav {
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 99, 71, 0.945);
 }
- #footer-container{
+
+/* for footer */
+#footer-container {
     position: relative;
     height: 80vh;
     margin: 0vw 0.2vw 0vw 0.2vw;
     background-repeat: no-repeat;
     background-image: url("assets/Rectangle\ 28.png");
     background-size: cover;
- } 
- #baseline{
-    /* justify-self: flex-end; */
+}
+
+#baseline {
     position: relative;
     top: 34vw;
     margin-left: 4.5vw;
     height: 18vh;
     background-repeat: no-repeat;
     background-image: url("assets/baseline.png");
- }
+}
+
 .email {
     display: flex;
     flex-direction: column;
@@ -330,19 +334,21 @@ nav {
     gap: 2vw;
     position: absolute;
     top: 7vw;
-    left: 60vw; 
-    transform: translateX(-50%); 
-    width: 300px; 
+    left: 60vw;
+    transform: translateX(-50%);
+    width: 300px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.email h1{
-  color: #fff;
-  text-align: center;
-  font-size: 2vw;
- 
+
+.email h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2vw;
+
 }
+
 .contact-us {
     margin-bottom: 10px;
     padding: 1vw;
@@ -350,65 +356,70 @@ nav {
 }
 
 input[type="text"] {
-    width: 100%; 
+    width: 100%;
     border: none;
     border-radius: 3vw;
 }
-.result{
-    position:relative;
+
+.result {
+    position: relative;
     top: 3vw;
     text-align: center;
     font-size: 1.3vw;
     color: rgba(255, 99, 71, 0.922);
 }
+
 .box-if-searched {
     margin-top: 5vw;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
-}
-.search-dish {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    width: 18vw; 
-    height: 20vw;
-    padding: 2vw;
-    overflow: hidden; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-    cursor: pointer; 
-    transition: transform 0.3s; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.search-dish  img {
+.search-dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18vw;
+    height: 20vw;
+    padding: 2vw;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.search-dish img {
     width: 100%;
     border-radius: 50%;
-    height: 15vw; 
+    height: 15vw;
     width: 15vw;
-    display: block; 
-    transition: transform 0.3s ease-in-out; 
+    display: block;
+    transition: transform 0.3s ease-in-out;
 }
 
 .search-dish :hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
-.search-dish  h1 {
+.search-dish h1 {
     margin-top: 2vw;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     text-align: center;
 }
+
 /* popup */
 .random-modal {
     text-align: center;
     padding: 50px;
-} 
-#home{
+}
+
+#home {
     display: flex;
-    /* justify-content: space-between; */
     gap: 10vw;
 }
+
 .random-modal p {
     margin-bottom: 20px;
 }
@@ -420,7 +431,7 @@ input[type="text"] {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
@@ -459,7 +470,8 @@ input[type="text"] {
     width: 40vw;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-#about-the-dish{
+
+#about-the-dish {
     padding: 10px 20px;
     background-color: rgba(255, 99, 71, 0.573);
     color: white;
@@ -467,12 +479,15 @@ input[type="text"] {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
+
     &:hover {
         background-color: rgba(255, 99, 71, 0.945);
         color: #fbf6f6c2;
     }
 }
-#signup{
+
+/* footer elements */
+#signup {
     padding: 10px 20px;
     background-color: rgba(255, 99, 71, 0.573);
     color: white;
@@ -480,40 +495,45 @@ input[type="text"] {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
+
     &:hover {
         background-color: rgba(255, 99, 71, 0.945);
         color: #fbf6f6c2;
     }
 }
-#three-icons{
+
+#three-icons {
     display: flex;
     gap: 2vw;
 }
-#three-icons #icons{
+
+#three-icons #icons {
     position: absolute;
     top: 14vw;
-    left: 28vw; 
+    left: 28vw;
 }
-#three-icons #logo-icon{
+
+#three-icons #logo-icon {
     position: absolute;
     top: 5vw;
     left: 30.7vw;
     height: 8vw;
 }
-.image-wrapper2{
+
+/* popup elements */
+.image-wrapper2 {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Aligns images to the right */
-    
+    justify-content: flex-end;
 }
 
-.image-wrapper2 .element{
+.image-wrapper2 .element {
     width: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
 .image-wrapper2 img:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
 }
 
 .curved-container2 {
@@ -527,7 +547,8 @@ input[type="text"] {
     overflow: hidden;
     box-shadow: 5px 5px 10px #90AA8B;
 }
-.circleBorder2{
+
+.circleBorder2 {
     position: relative;
     top: 5vw;
     right: 21vw;
@@ -538,7 +559,8 @@ input[type="text"] {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.dishName2{
+
+.dishName2 {
     display: inline;
     position: fixed;
     top: 3vw;
@@ -547,30 +569,37 @@ input[type="text"] {
     width: 100%;
     color: rgba(255, 99, 71, 0.984);
 }
-/* media query */
 
+/* media query */
+/*1. media query for laptop view*/
 @media only screen and (max-width: 1025px) {
-    #text h5{
-        padding-left: 10.7vw 
+    #text h5 {
+        padding-left: 10.7vw
     }
+
     #random-dish {
         width: 12vw;
         height: 3.8000000000000007vw;
     }
+
     #button-Input-flex {
         width: 52vw;
     }
+
     #second .instruction {
         left: 10vw;
         top: 13vw;
         width: 15vw;
     }
+
     #footer-container {
         height: 59vh;
     }
-    #baseline{
+
+    #baseline {
         display: none;
-     }
+    }
+
     .email {
         position: absolute;
         top: 20vw;
@@ -578,28 +607,32 @@ input[type="text"] {
         transform: translateX(-50%);
         width: 180px;
     }
-    .email h1{
-      color: #fff;
-      text-align: center;
-      font-size: 2vw;
-     
+
+    .email h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 2vw;
+
     }
+
     .contact-us {
         margin-bottom: 10px;
         padding: 0.4vw;
         background-color: #fff;
     }
-    
+
     input[type="text"] {
-        width: 100%; 
+        width: 100%;
         border: none;
         border-radius: 3vw;
     }
-    #three-icons #icons{
+
+    #three-icons #icons {
         position: absolute;
         top: 34vw;
-    left: 27vw 
+        left: 27vw
     }
+
     #three-icons #logo-icon {
         position: absolute;
         top: 18vw;
@@ -607,46 +640,66 @@ input[type="text"] {
         height: 14vw;
     }
 }
+
 @media only screen and (max-width: 768px) {
     #random-dish {
         width: 19vw;
         height: 5.800000000000001vw;
     }
+
     #button-Input-flex {
         width: 65vw;
     }
-    .search-dish{
+
+    .search-dish {
         height: 23vw;
     }
 }
+
+/* 2.media query for mobile view */
 @media only screen and (max-width: 426px) {
+    nav {
+        height: 14vw;
+    }
+
+    #Container {
+        height: 10vw;
+    }
+
     .search-dish h1 {
         margin-top: 2vw;
         font-size: 2vw;
         text-align: center;
     }
-    #text{
+
+    #text {
         width: 44vw;
         padding: 0px;
     }
+
     #text h5 {
         padding-left: 0.699999999999999vw;
         width: 40vw;
         font-size: 2.3vw;
+        right: 4vw;
     }
+
     #arrow {
         height: 4vw;
         width: 4vw;
     }
+
     #second .click {
         height: 5vw;
         border-radius: 3vw;
         font-size: 1.8vw;
-        
+
     }
+
     .dishName2 {
         font-size: 2vw;
     }
+
     input[type="text"] {
         width: 100%;
         height: 5vw;
@@ -654,17 +707,20 @@ input[type="text"] {
         border: none;
         border-radius: 3vw;
     }
+
     #button-Input-flex {
         width: 71vw;
     }
+
     #search-button {
         position: absolute;
         top: 1vw;
         left: 94%;
         height: 3vw;
         width: 3vw;
-        
+
     }
+
     #random-dish {
         position: relative;
         top: -2vw;
@@ -672,43 +728,53 @@ input[type="text"] {
         height: 5.800000000000001vw;
         font-size: 1.5vw;
     }
-    #text span{
+
+    #text span {
         font-size: 6vw;
         letter-spacing: 0.1vw;
     }
+
     .text {
         font-size: 1.7vw;
         font-weight: bolder;
         height: 33vw;
         width: 52vw;
-        
     }
-    #second{
+
+    #second {
         height: 64vh;
     }
+
     #second .instruction {
         height: 7.800000000000001vw;
         font-size: 2vw;
         width: 18vw;
         left: 9vw;
     }
+
     .random-modal p {
         margin-bottom: 10px;
         font-size: 2vw;
     }
+
     .random-modal {
         text-align: center;
         padding: 12px;
-    }#about-the-dish {
+    }
+
+    #about-the-dish {
         padding: 6px 9px;
         margin: 2px;
     }
+
     #footer-container {
         height: 22vh;
     }
-    #baseline{
+
+    #baseline {
         display: none;
-     }
+    }
+
     .email {
         display: flex;
         flex-direction: column;
@@ -716,36 +782,41 @@ input[type="text"] {
         gap: 2vw;
         position: absolute;
         top: 7vw;
-        left: 74vw; 
-        transform: translateX(-50%); 
-        width: 121px; 
+        left: 74vw;
+        transform: translateX(-50%);
+        width: 121px;
         padding: 10px;
         border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    .email h1{
-      color: #fff;
-      text-align: center;
-      font-size: 2vw;
-     
+
+    .email h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 2vw;
+
     }
+
     .contact-us {
         margin-bottom: 0px;
         padding: 0.4vw;
         font-size: 2vw;
         background-color: #fff;
     }
-    #signup{
+
+    #signup {
         height: 3vw;
         font-size: 2vw;
         padding: 0px;
     }
-    #three-icons #icons{
+
+    #three-icons #icons {
         position: absolute;
         height: 7vw;
         top: 19vw;
-        left: 26vw; 
+        left: 26vw;
     }
+
     #three-icons #logo-icon {
         position: absolute;
         top: 5vw;
@@ -753,3 +824,5 @@ input[type="text"] {
         height: 14vw;
     }
 }
+
+/* CSS :- THIS style.css includes styling for nav bar,first section,second section,popup for random recipie ,buttons,searchbar,footer and searched dishes. */
